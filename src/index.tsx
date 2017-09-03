@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Block, {OutputShape} from './block';
+import Block, {OutputShape} from './components/block';
 
 class Playground extends React.Component {
   render() {

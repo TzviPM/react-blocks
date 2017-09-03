@@ -1,6 +1,8 @@
 import React from 'react';
 import injectSheet, {ReactJssProps} from 'react-jss';
 
+import styles from './block.styles';
+
 export enum OutputShape {
   Hexagonal = 1,
   Round,
@@ -26,28 +28,6 @@ export interface BlockProps {
   colorSecondary?: Color,
   colorTertiary?: Color,
 }
-
-const hexagonalStyles = {
-  border: 'solid 1px blue',
-};
-
-const roundStyles = {
-  border: 'solid 1px red',
-};
-
-const squareStyles = {
-  border: 'solid 1px green',
-};
-
-const styles = {
-  base: {
-    display: 'inline-block',
-    padding: '5px',
-  },
-  Hexagonal: hexagonalStyles,
-  Round: roundStyles,
-  Square: squareStyles,
-};
 
 type ComposedBlockProps =
   BlockProps &
