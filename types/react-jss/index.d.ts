@@ -3,11 +3,11 @@
 declare module 'react-jss' {
   export = ReactJss;
 
-  function ReactJss(styles: Object): ReactJss.ReactDecorator;
+  function ReactJss<T>(styles: Object): ReactJss.ReactDecorator<T>;
 
   namespace ReactJss {
-    export interface ReactDecorator {
-        (component: React.ComponentType): React.Component,
+    export interface ReactDecorator<T> {
+        (component: React.ComponentType<T>): React.ComponentType<T>,
     }
 
     export interface ReactJssProps {
