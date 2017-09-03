@@ -1,5 +1,5 @@
 import React from 'react';
-import injectSheet from 'react-jss';
+import injectSheet, {ReactJssProps} from 'react-jss';
 
 enum OutputShape {
   Hexagonal = 1,
@@ -37,9 +37,7 @@ const styles = {
 
 type ComposedBlockProps =
   BlockProps &
-  {
-    classes: any
-  };
+  ReactJssProps;
 
 class Block extends React.PureComponent<ComposedBlockProps, never> {
   render() {
