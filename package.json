@@ -1,0 +1,11 @@
+{
+  "name": "react-blocks",
+  "version": "1.0.0",
+  "description": "Building blocks for React applications",
+  "main": "index.js",
+  "author": "Tzvi Melamed <hartley@melamed.biz>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.5.2"
+  }
+}
